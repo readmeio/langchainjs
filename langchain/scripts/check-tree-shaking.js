@@ -8,7 +8,7 @@ export function listEntrypoints() {
   const entrypoints = [];
 
   for (const [key, value] of Object.entries(exports)) {
-    if (key === "./package.json") {
+    if (key === "./package.json" || key === "./readme-text-split") {
       continue;
     }
     if (typeof value === "string") {
