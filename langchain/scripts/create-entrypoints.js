@@ -573,7 +573,13 @@ const updateConfig = () => {
           return [`./${key}`, entryPoint];
         })
       ),
-      { "./package.json": "./package.json" }
+      {
+        "./readme-text-split": {
+          import: "./dist-readme/text_splitter.js",
+          require: "./dist-readme/text_splitter.cjs",
+        },
+        "./package.json": "./package.json",
+      }
     ),
     files: ["dist/", ...filenames],
   }));

@@ -1,5 +1,4 @@
 {
-  "extends": "@tsconfig/recommended",
   "compilerOptions": {
     "outDir": "../dist",
     "rootDir": "./src",
@@ -20,6 +19,8 @@
     "useDefineForClassFields": true,
     "strictPropertyInitialization": false,
     "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true
   },
   "include": [
