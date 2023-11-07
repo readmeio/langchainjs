@@ -1,5 +1,5 @@
 {
-  "name": "@readme/langchain",
+  "name": "langchain",
   "version": "0.0.181",
   "description": "Typescript bindings for langchain",
   "type": "module",
@@ -805,7 +805,7 @@
     "lint:fix": "yarn lint --fix",
     "precommit": "lint-staged",
     "clean": "rimraf dist/ && NODE_OPTIONS=--max-old-space-size=4096 node scripts/create-entrypoints.js pre",
-    "prepack": "yarn build",
+    "prepack": "yarn build && npm pkg set name=@readme/langchain",
     "release": "release-it --only-version --config .release-it.json",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --testPathIgnorePatterns=\\.int\\.test.ts --testTimeout 30000 --maxWorkers=50%",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch --testPathIgnorePatterns=\\.int\\.test.ts",
