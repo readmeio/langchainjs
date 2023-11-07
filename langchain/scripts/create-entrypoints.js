@@ -581,7 +581,7 @@ const updateConfig = () => {
         "./package.json": "./package.json",
       }
     ),
-    files: ["dist/", ...filenames],
+    files: ["dist/", "dist-readme/", ...filenames],
   }));
 
   // Write generated files
